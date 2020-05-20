@@ -8,8 +8,17 @@ Create github repository
 curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
 ```
 
+## DevOps
+Start ec2 instance, need awscli and run `aws config` first
+
+```bash
+aws ec2 start-instance --instance-ids  <instance id>
+```
+
+
 ## Video/Audio
 Extract mp3 from video file
+
 ```bash
 ffmpeg -i sample.avi -f mp3 -ab 192000 -vn sample.mp3
 ```
