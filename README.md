@@ -15,6 +15,9 @@ Start ec2 instance, need awscli and run `aws config` first
 aws ec2 start-instance --instance-ids  <instance id>
 ```
 
+## OS
+Mount Samba/Windows Share to local
+```sudo mount -t cifs //nas/folder local_folder```
 
 ## Video/Audio
 Extract mp3 from video file
