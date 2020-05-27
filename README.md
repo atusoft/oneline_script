@@ -17,7 +17,8 @@ aws ec2 start-instance --instance-ids  <instance id>
 
 ## OS
 Mount Samba/Windows Share to local
-```sudo mount -t cifs //nas/folder local_folder```
+``` mount -t cifs //192.168.1.2/temp ~/temp -o username=someone,password=someone,rw,dir_mode=0777,file_mode=0777```
+
 
 ## Video/Audio
 Extract mp3 from video file
