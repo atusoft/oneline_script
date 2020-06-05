@@ -15,6 +15,11 @@ Start ec2 instance, need awscli and run `aws config` first
 aws ec2 start-instance --instance-ids  <instance id>
 ```
 
+Delet old files
+```tmpwatch 100d /var/log```
+or 
+```tmpreaper 100d /var/log```
+
 ## OS
 Mount Samba/Windows Share to local
 ``` mount -t cifs //192.168.1.2/temp ~/temp -o username=someone,password=someone,rw,dir_mode=0777,file_mode=0777```
