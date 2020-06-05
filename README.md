@@ -16,13 +16,24 @@ aws ec2 start-instance --instance-ids  <instance id>
 ```
 
 Delet old files
-```tmpwatch 100d /var/log```
+```
+tmpwatch 100d /var/log
+```
 or 
-```tmpreaper 100d /var/log```
+```
+tmpreaper 100d /var/log
+```
 
 Test network
-server `iperf3 -s`
-client `iperf -c 192.168.1.1  -P 30 -t 60`
+server 
+```
+iperf3 -s
+```
+
+client 
+```
+iperf -c 192.168.1.1  -P 30 -t 60
+```
 
 ## OS
 Mount Samba/Windows Share to local
