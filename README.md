@@ -20,6 +20,10 @@ Delet old files
 or 
 ```tmpreaper 100d /var/log```
 
+Test network
+server `iperf3 -s`
+client `iperf -c 192.168.1.1  -P 30 -t 60`
+
 ## OS
 Mount Samba/Windows Share to local
 ``` mount -t cifs //192.168.1.2/temp ~/temp -o username=someone,password=someone,rw,dir_mode=0777,file_mode=0777```
