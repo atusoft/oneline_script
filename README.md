@@ -35,6 +35,11 @@ client
 iperf -c 192.168.1.1  -P 30 -t 60
 ```
 
+find big folder and files
+```
+du -a /var | sort -n -r | head -n 10
+```
+
 ## OS
 Mount Samba/Windows Share to local
 ``` mount -t cifs //192.168.1.2/temp ~/temp -o username=someone,password=someone,rw,dir_mode=0777,file_mode=0777```
