@@ -8,6 +8,11 @@ Create github repository
 curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
 ```
 
+Find process using port (windows)
+```bash
+netstat -aon|findstr
+```
+
 ## DevOps
 Start ec2 instance, need awscli and run `aws config` first
 
