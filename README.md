@@ -10,7 +10,7 @@ curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
 
 Find process using port (windows)
 ```bash
-netstat -aon|findstr
+netstat -aon|findstr <port>
 ```
 
 ## DevOps
