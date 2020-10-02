@@ -56,3 +56,8 @@ Extract mp3 from video file
 ```bash
 ffmpeg -i sample.avi -f mp3 -ab 192000 -vn sample.mp3
 ```
+
+Cut mp3 
+```bash
+ ffmpeg -i source.mp3 -ss 00:01:12 -t 00:01:42 -acodec copy target.mp3
+```
