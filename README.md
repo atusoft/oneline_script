@@ -45,6 +45,11 @@ iperf -c 192.168.1.1  -P 30 -t 60
 du -a /var | sort -n -r | head -n 10
 ```
 
+* delete all docker containers
+```
+docker rm $(docker ps -aq)
+```
+
 ## OS
 * Mount Samba/Windows Share to local
 ```
