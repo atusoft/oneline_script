@@ -47,6 +47,9 @@ du -a /var | sort -n -r | head -n 10
 
 `find / -type f -size +1024k`
 
+* sort APT package by size
+`dpkg-query -W --showformat='${Installed-Size} ${Package}\n' | sort -nr | less`
+
 * delete all docker containers
 ```
 docker rm $(docker ps -aq)
