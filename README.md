@@ -76,3 +76,5 @@ ffmpeg -i sample.avi -f mp3 -ab 192000 -vn sample.mp3
 ```bash
  ffmpeg -i source.mp3 -ss 00:01:12 -t 00:01:42 -acodec copy target.mp3
 ```
+* Get video encode format
+```ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nokey=1:noprint_wrappers=1```
