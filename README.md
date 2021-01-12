@@ -80,3 +80,7 @@ ffmpeg -i sample.avi -f mp3 -ab 192000 -vn sample.mp3
 ```bash
 ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=nokey=1:noprint_wrappers=1 sample.mp4
 ```
+* convert to h265
+```bash
+ ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4
+ ```
