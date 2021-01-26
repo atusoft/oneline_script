@@ -64,7 +64,10 @@ mount -t cifs //192.168.1.2/temp ~/temp -o username=someone,password=someone,rw,
 ```
 jdupes -dr --xsize=100M .
 ```
-
+* Delete empty folder
+```
+find . -type d -empty -delete
+```
 ## Video/Audio
 * Extract mp3 from video file
 
