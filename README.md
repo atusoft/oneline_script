@@ -55,6 +55,11 @@ du -a /var | sort -n -r | head -n 10
 docker rm $(docker ps -aq)
 ```
 
+* attch container
+```
+docker exec -i -t 665b4a1e17b6 /bin/bash #by ID
+```
+
 ## OS
 * Mount Samba/Windows Share to local
 ```
