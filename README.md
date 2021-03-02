@@ -73,6 +73,10 @@ jdupes -dr --xsize=100M .
 ```
 find . -type d -empty -delete
 ```
+* Rename files
+```
+rename <pattern> <replacement> <file-list>
+```
 ## Video/Audio
 * Extract mp3 from video file
 
